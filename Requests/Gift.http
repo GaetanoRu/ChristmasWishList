@@ -1,0 +1,38 @@
+@localhost = https://localhost:7201/api
+@id = <Insert ID>
+
+### Get All Gifts
+GET {{localhost}}/Gifts
+
+### Get Gift by Id
+GET {{localhost}}/Gifts/{{id}}
+
+### Create Gift
+POST {{localhost}}/Gifts
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "nameGift": "Book C# 11 and .Net7",
+  "price": 40,
+  "isPurchased": false
+}
+
+### Update Gift
+
+PUT {{localhost}}/Gifts/{{id}}
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "nameGift": "Book C# 11 and .Net7",
+  "price": 40,
+  "isPurchased": true
+}
+
+
+### Delete Gift
+DELETE {{localhost}}/Gifts/{{id}}
+
+### Delete all gigt
+DELETE {{localhost}}/Gifts
