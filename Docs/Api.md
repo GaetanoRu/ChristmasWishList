@@ -35,8 +35,9 @@ GET /gifts
 ```json
 {
   "total": 1,
+  "totalAmount": 40
   "totalSpent": 0,
-  "totalRemaining": 40,
+  "totalToSpent": 40,
   "result": [
     {
       "id": "e6a9bc8a-4707-4e1a-8380-7541ea0f1a4a",
@@ -87,6 +88,10 @@ or
 
 ### Create Gift Request
 
+```js
+POST /Gifts
+```
+
 ```json
 {
   "firstName": "John",
@@ -99,6 +104,9 @@ or
 ### Create Gift Response
 ```js
 201 Created
+```
+```yaml
+Location: {{url}}/Breakfasts/{{id}}
 ```
 or
 ```js
