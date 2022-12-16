@@ -16,7 +16,7 @@ In this project I built a REST CRUD API from scratch, using .NET 6. As you would
 
 The ChristmasWishList project will open up the Swagger UI once it starts. Here you can browse the documentation for each endpoint, making it easy to test all of the endpoints.
 
-![Swagger UI](images/swagger.png)
+![Swagger UI](images/Swagger.PNG)
 
 # API Definition
 
